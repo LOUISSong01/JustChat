@@ -1,0 +1,23 @@
+{
+  "name": "chatting-system",
+  "version": "1.0.0",
+  "description": "Real-time Chatting Service using WebSockets and Vanilla JS",
+  "author": "Louis Song",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "pug": "^3.0.2",
+    "socket.io": "^4.4.1",
+    "ws": "^8.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  }
+}

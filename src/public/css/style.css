@@ -1,0 +1,232 @@
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.hidden {
+  display: none !important;
+}
+input,
+button {
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+}
+
+button {
+  background: #5e5df0;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 4px 11px;
+  box-sizing: border-box;
+  line-height: 24px;
+  opacity: 1;
+}
+
+form input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#welcomePage {
+  font-family: "Shadows Into Light", cursive;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#welcomeContainer {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2rem;
+  border: 3px solid navy;
+  border-radius: 15px;
+  padding: 45px 125px;
+  text-align: center;
+  border-style: outset;
+  border-width: 25px;
+  width: 30vw;
+}
+#welcomeForm input {
+  height: 5rem;
+  font-size: 1rem;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 15px;
+  margin-right: 1rem;
+}
+#welcomeForm button {
+  font-size: 1rem;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 600;
+}
+
+#roomListContainer {
+  border: 3px solid #aaaaaa;
+  border-radius: 15px;
+  align-self: center;
+  transform: translateX(13vw);
+}
+
+#messageList {
+  font-size: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#chatRoom {
+  font-family: "Shadows Into Light", cursive;
+  height: 100vh;
+  font-size: 2rem;
+}
+#roomNameContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#messagesandForm {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+#whoyouare {
+  margin-left: 4vw;
+  display: block;
+  font-size: 1vw;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+#particiContainer {
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: visible;
+  height: 64vh;
+}
+#particiTitle {
+  transform: translateX(1.3vw);
+  border: 1px solid black;
+  padding: 0.4vw;
+  border-radius: 10px;
+  border-width: 0.2vw;
+}
+
+#participants {
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#messageListContainer {
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 6px solid #5e5df0;
+  border-radius: 10px;
+  width: 50vw;
+  height: 70vh;
+  word-break: break-all;
+}
+
+#messagesContainer {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 3vw;
+  border: 5px solid #5e5df0;
+}
+#messageContainer::-webkit-scrollbar {
+  width: 90px;
+}
+#messageList li {
+  font-size: 1vw;
+  font-weight: bolder;
+  padding: 0.2vw;
+  margin-left: 20%;
+}
+
+#messagesFormContainer {
+  padding-top: 0;
+}
+
+#messagesForm {
+  display: flex;
+  height: 12vh;
+  justify-content: center;
+  align-items: center;
+}
+#messagesForm input {
+  height: 5vh;
+  width: 40vw;
+  border-radius: 20px;
+}
+#nicknameForm input {
+  height: 5vh;
+  border-radius: 20px;
+}
+#leaveButton {
+  width: 5vw;
+  position: absolute;
+  top: 0.5vw;
+  right: 0.5vw;
+}
+
+@media screen and (max-width: 580px) {
+  #roomNameContainer {
+    font-size: 5vw;
+  }
+  #welcomeContainer {
+    width: 20px;
+    font-size: 20px;
+    padding: 25px 85px;
+    border-width: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #welcomeForm input {
+    height: 2rem;
+    width: 10rem;
+    font-size: 1rem;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 581px) {
+  #welcomeContainer {
+    width: 20px;
+    font-size: 20px;
+    padding: 25px 85px;
+    border-width: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #welcomeForm input {
+    height: 2rem;
+    width: 10rem;
+    font-size: 1rem;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title SocketIOChat
+        link(rel="stylesheet" href="../public/css/style.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+        
+    body 
+        main
+            div#welcomePage
+                div#roomListContainer 
+                    h2 Available Rooms
+                    ul#roomList
+                div#welcomeContainer
+                    h1 JustChat
+                    form#welcomeForm
+                        input(type="text" placeholder="which room?",required)
+                        button Enter
+            div#chatRoom
+                div#roomNameContainer 
+                    h2#roomName
+                div#messagesandForm
+                    div#messageListContainer
+                        div#messagesContainer
+                            button#leaveButton Leave
+                            ul#messageList
+                        div#whoyouare
+                        div#messagesFormContainer
+                            form#messagesForm
+                                input(type="text" placeholder="type your message")
+                                button Enter
+                    div#nicknameFormContainer
+                        form#nicknameForm
+                            input(type="text" placeholder="choose your nickname" required maxlength="15")
+                            button save
+                        div#particiContainer
+                            h3#particiTitle Participants🙆‍♂️
+                            ul#participants 
+                        
+
+        script(src="socket.io/socket.io.js")
+        script(src="public/js/app.js")
