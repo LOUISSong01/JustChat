@@ -5,7 +5,9 @@
   "author": "Louis Song",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "start": "node server.js",
+    "heroku-postbuild": "npx webpack"
   },
   "dependencies": {
     "express": "^4.17.3",
